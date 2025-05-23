@@ -1,0 +1,154 @@
+form {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.form_area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #80db79;
+  width: 100%;
+  max-width: 400px;
+  border: 2px solid #4da044;
+  border-radius: 20px;
+  box-shadow: 3px 4px 0px 1px #844d2f;
+  padding: 20px;
+}
+
+.title {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+.sub_title {
+  color: #ffffff;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.form_group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 10px auto;
+}
+
+/* Обновлённый стиль для инпутов */
+.form_style {
+  outline: none;
+  border: 2px solid #4da044;
+  box-shadow: 3px 4px 0px 1px #844d2f;
+  width: 100%;
+  padding: 12px 10px;
+  border-radius: 4px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.btn {
+  color: #844d2f;
+  border: 2px solid #4da044;
+  padding: 15px;
+  width: 100%;
+  font-size: 15px;
+  background: #ffffff;
+  border-radius: 10px;
+  font-weight: 800;
+  box-shadow: 3px 4px 0px 1px #844d2f;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #4da044;
+  border: 2px solid #4da044;
+  box-shadow: 3px 4px 0px 1px #844d2f;
+}
+
+.form_style:focus,
+.btn:focus {
+  transform: translateY(4px);
+  box-shadow: 1px 2px 0px 0px #844d2f;
+}
+
+.success,
+.error {
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.success {
+  color: #4da044;
+}
+
+.error {
+  color: red;
+}
+
+/* Сообщение об ошибке */
+.error-text {
+  text-align: center;
+  margin: 20px auto 0;
+  font-size: 15px;
+  font-weight: 800;
+  color: red;
+  max-width: 80%;
+}
+
+/* Контейнер для ошибок */
+.error-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+input::placeholder {
+  font-size: 16px;
+  color: #80db79;
+}
+
+input[type="date"] {
+  color: #80db79;
+  font-size: 16px;
+}
+
+/* Сообщение о самовывозе */
+.success-pickup {
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 800;
+  color: #4da044;
+  text-align: center;
+}
+
+/* Адаптивность */
+@media (max-width: 576px) {
+  input::placeholder {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 340px) {
+  input::placeholder {
+    font-size: 11px;
+  }
+}
